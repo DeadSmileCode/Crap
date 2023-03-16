@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Hello, World!\""
+    "test": "echo \"Hello, World!\"",
+    "start": "node index.js"
   },
   "author": "DSC",
   "license": "ISC",
