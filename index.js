@@ -6,6 +6,11 @@ console.log("start\n");
 let cookies = "";
 var count_cookies = 1;
 
+app.use(function(req , res , next){  
+    console.log(`${req.ip}   ${req.method}   ${req.url}`);
+    next();
+});
+
 app.use(express.static(__dirname + "/html"));
 
 app.get("/home", function(req, res){
